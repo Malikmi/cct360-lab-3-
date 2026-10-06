@@ -7,37 +7,36 @@
         <link rel="stylesheet" href="css/stylesheet.css">
     </head>
     <body>
-        <main>
-            <h1> Squencing</h1>
-                <p>coffee stories </p>
+        <header>
+            <h1> Sequencing</h1>
+                <p>Same three images. Different order.A completely different story </p>
 
-                <divclass="buttons"> 
-                    <button id="story1button">story 1:Study fuel</button>
-                    <button id="story2button">story 2:Another coffee, Please</button>
+                <div class="version-buttons"> 
+                    <button id="btnA" class="version-btn active">Version A: A Makeup </button>
+                    <button id="btnB" class="version-btn">Version B: The Breakup</button>
                 </div>
+            </header>
+            <main>
+                 <h2 id="storyTitle"> Version A:The Makeup </h2>
+                 <p id="stage">Beginning (1 of 3) </p>
+                 <img id="mainImage" src="images/argue.jpg" alt="Two people arguing">
+                 <p id="caption"> It started with a fight. Neither of them would back down." </p>
 
-                <h2 id="storyTitle">Study Fuel</h2>
+                 <div class="nav-buttons">
+                    <button id="btnBack"> &larr; Back</button>
+                    <button id="btnNext"> Next &rarr;</button>
+                 </div>
 
-                <p id="storyDescription">She gets a coffee and drinks it while studying, and throws away the finished cup. One coffee gets her through her study sessions. </p>
-
-                <div class="sequence">
-                    <figure>
-                        <h3>beginning</h3>
-                        <img src="images/coffee.jpg" alt="Coffee ready to drink">
-                    </figure>
-                    <figure>
-                        <h3>middle</h3>
-                        <img src="images/studying.jpg" alt="Person studying with coffee">
-                    </figure>
-                    <figure>
-                        <h3>end</h3>
-                        <img src="images/cupthrowingaway.jpg" alt="Cup being thrown away">
-                    </figure>
-                </div>
-<script src="js/script.js"></script>
-
-        </main>
-
+                 <div class="filmstrip">
+                    <img id="thumb1" src="images/argue.jpg" alt="Part 1">
+                    <img id="thumb2" src="images/alone.jpg" alt="Part 2">
+                    <img id="thumb3" src="images/together.jpg" alt="Part 3">
+                 </div>
+                 
+                 <p class ="hint">Tip: you can also click the big image to move forward.</p>
+            </main>
+        
+            <script src="js/script.js"></script>
     </body>
 </html>
 
